@@ -29,14 +29,22 @@
 	<div></div>
 	<script>
 		/* STEP 1: Assign the DIV to a variable */
-
+var div =document.querySelector('div');
 		/* STEP 2: Collect the width and height of the document window */
-
+var WIDTH = window.innerWidth;
+var HEIGHT= window.innerHEIGHT;
 		/* STEP 3: Change the height and width of the DIV to match the document window */
-
+div.style.width=WIDTH+'px';
+div.style.height=HEIGHT+'px';
 		/* STEP 4: View the result in the browser - and try resizing the window */
 		/* STEP 5: Build a function that responds to the window.onresize event and revises the size of the DIV */
-
+window.onresize=function(){
+	var WIDTH = window.innerWidth;
+	var HEIGHT= window.innerHEIGHT;
+	console.log(WIDTH+','+HEIGHT);
+	div.style.width=WIDTH+'px';
+	div.style.height=HEIGHT+'px';
+}
 
 		/* STEP 6: Try the improved script in the browser - watch the inline style of the DIV change with the resizing of the window */
 
