@@ -35,10 +35,12 @@ var paragraph=document.createElement('p');
 paragraph.textContent="We hope you find MND helpful"
 
 		/* STEP 3c: Add this new node to the end of the nodes contained by the SECTION element */
-
+section.appendchild(paragraph);
 		/* STEP 3d: Refresh the page in the browser and look at the updated element inspector */
 		/* STEP 3e: Create a text node, and insert it into the paragraph that contains the link */
-
+var text=document.createTextNode('-best source for web development information on the web.');
+var linkParagraph=document.querySelector('section p');
+linkParagraph.appendchild(text);
 
 
 		/* STEP 4: Moving and Removing DOM Elements
